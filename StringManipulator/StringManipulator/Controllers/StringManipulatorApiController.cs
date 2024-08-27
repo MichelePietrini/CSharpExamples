@@ -5,33 +5,36 @@ using StringManipulator.Models;
 namespace StringManipulator.Controllers;
 
 
-// Controller Web API che gestisce le richieste HTTP per manipolare stringhe.
+/// <summary>
+/// Questa classe rappresenta un controller API per la manipolazione di stringhe.
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 public class StringManipulatorApiController : ControllerBase
 {
-
-    // Campo per memorizzare l'istanza del manipolatore di stringhe.
     private readonly StringManipulator.Models.StringManipulator _stringManipulator;
 
-    // Nel costruttore, inizializziamo il manipolatore come un'istanza di LongestWordManipulator.
+    /// <summary>
+    /// Crea una nuova istanza della classe StringManipulatorApiController.
+    /// </summary>
     public StringManipulatorApiController()
     {
         _stringManipulator = new LongestWordManipulator();
     }
 
-
-    // Endpoint GET per restituire la parola più lunga in una stringa.
+    /// <summary>
+    /// Ottiene la parola piÃ¹ lunga all'interno di una stringa.
+    /// </summary>
+    /// <param name="input">La stringa di input.</param>
+    /// <returns>Un oggetto IActionResult che rappresenta il risultato dell'operazione.</returns>
     [HttpGet("longest-word")]
     public IActionResult GetLongestWord([FromQuery] string input)
     {
-        // Verifichiamo che l'input non sia vuoto o nullo.
         if (string.IsNullOrWhiteSpace(input))
         {
             return BadRequest("Input string cannot be empty.");
         }
 
-        // Usiamo il manipolatore per trovare la parola più lunga e restituirla come JSON.
         string result = _stringManipulator.Manipulate(input);
         return Ok(new { LongestWord = result });
     }
