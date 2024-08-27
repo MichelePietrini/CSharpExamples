@@ -1,0 +1,15 @@
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\bin\Debug\net8.0\ShoesDiscount.exe
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\bin\Debug\net8.0\ShoesDiscount.deps.json
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\bin\Debug\net8.0\ShoesDiscount.runtimeconfig.json
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\bin\Debug\net8.0\ShoesDiscount.dll
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\bin\Debug\net8.0\ShoesDiscount.pdb
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.AssemblyInfoInputs.cache
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.AssemblyInfo.cs
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.csproj.CoreCompileInputs.cache
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.sourcelink.json
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.dll
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\refint\ShoesDiscount.dll
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.pdb
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ShoesDiscount.genruntimeconfig.cache
+C:\Projects\C#\CSharpExamples\ShoesDiscount\ShoesDiscount\obj\Debug\net8.0\ref\ShoesDiscount.dll
