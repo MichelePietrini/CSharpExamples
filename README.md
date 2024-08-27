@@ -1,4 +1,4 @@
-# CSharpExamples# C# Examples - Shoes Discount and String Manipulator
+# C# Examples - Shoes Discount and String Manipulator
 
 Questa repository contiene due progetti C# separati:
 
