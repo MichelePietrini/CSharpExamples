@@ -17,15 +17,15 @@ namespace StringManipulator.Controllers
         [HttpGet("longest-word")]
         public IActionResult GetLongestWord([FromQuery] string input)
         {
-            // Verifichiamo che l'input non sia vuoto o nullo.
             if (string.IsNullOrWhiteSpace(input))
             {
+                // Passa la stringa di errore alla vista
                 return View("Error", "Input string cannot be empty.");
             }
 
-            // Usiamo il manipolatore per trovare la parola più lunga e restituirla come risultato HTML.
             string result = _stringManipulator.Manipulate(input);
             return View("Result", result);
         }
+
     }
 }
