@@ -1,3 +1,4 @@
+using StringManipulator.Interfaces;
 using StringManipulator.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddSingleton<StringManipulator.Models.StringManipulator, LongestWordManipulator>();
+builder.Services.AddSingleton<IStringManipulator, StringManipulatorViewModel>();
 
 var app = builder.Build();
 

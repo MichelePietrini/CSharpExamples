@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StringManipulator.Models;
+using StringManipulator.Interfaces;
 
 namespace StringManipulator.Controllers
 {
     public class StringManipulatorMvcController : Controller
     {
-        private readonly StringManipulator.Models.StringManipulator _stringManipulator;
+        private  IStringManipulator _stringManipulator;
 
-        public StringManipulatorMvcController()
+        public StringManipulatorMvcController(IStringManipulator stringManipulator)
         {
-            _stringManipulator = new LongestWordManipulator();
+            _stringManipulator =  stringManipulator;
         }
 
 
@@ -21,7 +21,7 @@ namespace StringManipulator.Controllers
                 return View("Error", "Input string cannot be empty.");
             }
 
-            string result = _stringManipulator.Manipulate(input);
+            string result = _stringManipulator.LongestWordManipulator(input);
             return View("Result", result);
         }
 

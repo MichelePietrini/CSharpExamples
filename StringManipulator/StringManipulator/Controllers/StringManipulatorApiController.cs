@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using StringManipulator.Models;
+using StringManipulator.Interfaces;
+
 
 namespace StringManipulator.Controllers;
 
@@ -12,14 +12,14 @@ namespace StringManipulator.Controllers;
 [Route("api/[controller]")]
 public class StringManipulatorApiController : ControllerBase
 {
-    private readonly StringManipulator.Models.StringManipulator _stringManipulator;
+    private readonly IStringManipulator _stringManipulator;
 
     /// <summary>
     /// Crea una nuova istanza della classe StringManipulatorApiController.
     /// </summary>
-    public StringManipulatorApiController()
+    public StringManipulatorApiController(IStringManipulator stringManipulator)
     {
-        _stringManipulator = new LongestWordManipulator();
+        _stringManipulator = stringManipulator;
     }
 
     /// <summary>
@@ -35,7 +35,7 @@ public class StringManipulatorApiController : ControllerBase
             return BadRequest("Input string cannot be empty.");
         }
 
-        string result = _stringManipulator.Manipulate(input);
+        string result = _stringManipulator.LongestWordManipulator(input);
         return Ok(new { LongestWord = result });
     }
 }
