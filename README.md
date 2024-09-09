@@ -11,7 +11,7 @@ Questa repository contiene due progetti C# separati:
 
 1. Vai alla cartella `ShoesDiscount`:
    ```bash
-   cd ShoesDiscount/ShoesDiscount
+   cd ShoesDiscount
    ```
 2. Esegui il progetto:
    ```bash
