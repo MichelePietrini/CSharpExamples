@@ -23,7 +23,7 @@ Questa repository contiene due progetti C# separati:
 1. Vai alla cartella StringManipulator:
 
    ```bash
-    cd StringManipulator/StringManipulator
+    cd StringManipulator
    ```
 
 2. Apri il progetto in Visual Studio o in un altro IDE.
