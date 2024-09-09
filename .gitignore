@@ -1,4 +1,5 @@
-ShoesDiscount/ShoesDiscount/obj/*
+ShoesDiscount/obj/*
+ShoesDiscount/.vs/*
 StringManipulator/StringManipulator.generated.sln
 StringManipulator/.vs/*
 StringManipulator/StringManipulator/bin/*
